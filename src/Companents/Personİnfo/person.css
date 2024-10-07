@@ -76,6 +76,6 @@
 @media (max-width: 768px) {
     .person > form {
         grid-template-columns: 1fr;
-    }   /*/*/
+    }    
 }
 
