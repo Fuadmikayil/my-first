@@ -1,0 +1,80 @@
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #f0f4f8;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.person > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.person > form > label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.person > form > label > input {
+    height: 45px;
+    padding: 10px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.person > form > label > input:hover,
+.person > form > label > input:focus {
+    border-color: #3b82f6;
+    background-color: #f9fbfd;
+    outline: none;
+}
+
+.person > form > label > span {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.person > form > label.full-width {
+    grid-column: 1 / -1;
+}
+
+.person > a {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.person > a:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .person > form {
+        grid-template-columns: 1fr;
+    }
+}

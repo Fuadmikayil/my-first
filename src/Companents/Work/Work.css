@@ -1,0 +1,40 @@
+.work-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.work-area>.works {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.work-area>.works>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    width: 100%;
+}
+
+.work-area>a {
+    color: white;
+    background-color: dodgerblue;
+    padding: 6px 14px;
+    width: min-content;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+
+
+.work-area>.all-work {
+    flex-wrap: wrap;
+}
+
+.work-area>.all-work>div {
+    width: calc((100% / 4) - 20px);
+}

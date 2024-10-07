@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(12, 98, 113);
+}
+
+.footer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer>ul>li>a {
+    color: white;
+}
+
+.footer>ul:nth-child(3)>span,
+a {
+    color: white;
+}

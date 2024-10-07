@@ -1,0 +1,33 @@
+.form-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box>form{
+    width: 400px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.form-box>form>input{
+    grid-column: 1 span;
+    grid-row: 1 span;
+    padding: 10px;
+    border: 1px solid darkgray;
+}
+.form-box>form>textarea{
+    grid-column: 2 span;
+    grid-row: 3 span;
+    padding: 10px;
+    border: 1px solid darkgray;
+}
+.form-box>form>button{
+    grid-column: 2 span;
+    grid-row: 1 span;
+    padding: 10px;
+    color: white;
+    background-color: darkgray;
+}
